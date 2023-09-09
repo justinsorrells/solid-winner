@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+.about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    width: 90%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(240, 240, 240, 1);
+    color: rgb(10, 10, 10, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.contact {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    justify-content: center;
+}
+
+.hero {
+    align-items: center;
+    background-image: url('assets/headshot.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    color: rgb(240, 240, 240);
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+}
+
+.projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto;
+    overflow: hidden;
+    text-align: center;
+    width: 90%;
+}
+
+.recent {
+    column-gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    row-gap: 10px;
+    width: 90%;
+}
+
+.recent img {
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    transition: all .2s;
+}
+
+.recent img:hover {
+    transform: scale(95%);
+}
+
+svg {
+    height: 1.5rem;
+}
+
+svg:hover path {
+    fill: rgba(130, 130, 130, 1);
+}
+
+.svgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 850px)
+{
+    .hero {
+        background-image: url('assets/headshotLarge.jpg');
+    }
+
+    .about, .projects, .recent {
+        max-width: 800px;
+    }
+
+    .recent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    svg {
+        height: 2rem;
+    }
+
+    .svgs {
+        width: 500px;
+    }
+}
