@@ -1,0 +1,3 @@
+[submodule "website-algorithms"]
+	path = website-algorithms
+	url = https://github.com/justinsorrells/website-algorithms
